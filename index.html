@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empty Your Mind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing">
+    <div class="landing-sparkle-layer" id="landingSparkles"></div>
+    <div class="landing-content">
+      <div class="ornate-border-top"></div>
+      <h1 class="title">Empty Your Mind</h1>
+      <p class="subtitle">Close your eyes. Let go.</p>
+      <button id="beginBtn" class="begin-btn">
+        <span class="btn-sparkle">&#10022;</span>
+        Begin
+        <span class="btn-sparkle">&#10022;</span>
+      </button>
+      <p class="camera-note" id="cameraNote"></p>
+      <div class="ornate-border-bottom"></div>
+    </div>
+  </div>
+
+  <!-- Main Experience -->
+  <div id="experience" class="hidden">
+    <!-- Samsara Layer (eyes open) -->
+    <div id="samsaraLayer" class="layer samsara-bg">
+      <canvas id="samsaraCanvas"></canvas>
+      <div id="temptationTexts"></div>
+      <div id="floatingEmojis"></div>
+    </div>
+
+    <!-- Emptiness Layer (eyes closed) -->
+    <div id="emptinessLayer" class="layer emptiness-bg" style="opacity:0;">
+      <canvas id="emptinessCanvas"></canvas>
+      <div id="enso"></div>
+      <p id="breathingText" class="breathing-text">Breathing...</p>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div id="levelDisplay" class="hud-item">Level 1 — Small Desires (&#49548;&#50837;)</div>
+      <div id="lookCount" class="hud-item">&#128065; You looked: 0</div>
+      <div id="progressBar"><div id="progressFill"></div></div>
+    </div>
+
+    <!-- Webcam feed -->
+    <video id="webcam" autoplay playsinline></video>
+
+    <!-- Fallback controls -->
+    <div id="fallbackControls" class="hidden">
+      <button id="toggleEyesBtn" class="fallback-btn">Close Eyes (Space)</button>
+      <p class="fallback-note">For the full experience, allow camera access</p>
+    </div>
+  </div>
+
+  <!-- Ending Screen -->
+  <div id="ending" class="hidden">
+    <div class="ending-content">
+      <div id="ensoEnd" class="enso-end"></div>
+      <div id="endingMessage"></div>
+      <div class="visitor-counter" id="visitorCounter"></div>
+      <div class="ending-buttons">
+        <button id="tryAgainBtn" class="end-btn">Try Again</button>
+        <button id="shareBtn" class="end-btn">Share</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

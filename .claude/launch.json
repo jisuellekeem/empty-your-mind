@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "empty-mind",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/jay/claude_github/empty-your-mind", "-l", "3456", "--no-clipboard"],
+      "port": 3456
+    }
+  ]
+}
