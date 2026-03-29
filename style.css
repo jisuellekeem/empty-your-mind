@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   font-family: 'Cormorant Garamond', serif;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext y='18' font-size='16'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E") 12 12, auto;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9FA%AA%B7%3C/text%3E%3C/svg%3E") 16 16, auto;
 }
 
 .hidden { display: none !important; }
@@ -22,10 +22,21 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #E8D5F5 0%, #F5E6F0 25%, #D4E8F7 50%, #FFE4F3 75%, #C9B8E8 100%);
-  background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 60%, rgba(180, 220, 210, 0.5) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 50% 45%, rgba(255, 230, 220, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 100% at 50% 100%, #7ecdc0 0%, #a8d8d0 20%, #c8e8e4 40%, transparent 65%),
+    linear-gradient(180deg, #c9b8e8 0%, #e8d5f5 20%, #f5e0ee 40%, #e8f0f8 60%, #b8ddd8 100%);
+  background-size: 100% 100%;
   z-index: 1000;
+}
+
+.landing-bg-image {
+  position: absolute;
+  inset: 0;
+  background: url('assets/meditation.jpeg') center center / contain no-repeat;
+  z-index: 1;
+  opacity: 0.92;
 }
 
 @keyframes gradientShift {
@@ -61,6 +72,7 @@ html, body {
   text-align: center;
   z-index: 10;
   position: relative;
+  pointer-events: auto;
 }
 
 .ornate-border-top,
