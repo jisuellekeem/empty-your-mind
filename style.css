@@ -34,9 +34,10 @@ html, body {
 .landing-bg-image {
   position: absolute;
   inset: 0;
-  background: url('assets/meditation.jpeg') center center / contain no-repeat;
+  background: url('assets/meditation.jpeg') center center / cover no-repeat;
   z-index: 1;
-  opacity: 0.92;
+  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, black 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, black 40%, transparent 100%);
 }
 
 @keyframes gradientShift {
