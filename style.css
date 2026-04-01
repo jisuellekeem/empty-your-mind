@@ -9,8 +9,8 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: 'Cormorant Garamond', serif;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9FA%AA%B7%3C/text%3E%3C/svg%3E") 16 16, auto;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='28' font-size='28'>🪷</text></svg>") 16 16, auto;
 }
 
 .hidden { display: none !important; }
@@ -92,7 +92,9 @@ html, body {
 }
 
 .title {
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 6px;
   font-size: clamp(3rem, 8vw, 6rem);
   color: #2a1a3e;
   text-shadow:
@@ -110,7 +112,7 @@ html, body {
 }
 
 .subtitle {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: clamp(1rem, 3vw, 1.6rem);
   font-style: italic;
   color: #5a4a6e;
@@ -120,7 +122,8 @@ html, body {
 }
 
 .begin-btn {
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
   font-size: 1.4rem;
   padding: 16px 50px;
   border: 2px solid rgba(255, 215, 0, 0.6);
@@ -205,7 +208,7 @@ html, body {
 
 .temptation {
   position: absolute;
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   color: rgba(42, 26, 62, 0.85);
   text-shadow: 0 0 15px rgba(200, 170, 255, 0.5), 0 0 30px rgba(255, 215, 0, 0.2);
   white-space: nowrap;
@@ -293,7 +296,7 @@ html, body {
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 300;
@@ -324,7 +327,7 @@ html, body {
 }
 
 .hud-item {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.95rem;
   color: rgba(42, 26, 62, 0.7);
   background: rgba(255, 255, 255, 0.25);
@@ -398,7 +401,7 @@ html, body {
 }
 
 .fallback-btn {
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.1rem;
   padding: 12px 35px;
   border: 2px solid rgba(255, 215, 0, 0.5);
@@ -456,7 +459,7 @@ html, body {
 }
 
 #endingMessage {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   color: rgba(200, 200, 220, 0.7);
   font-size: 1.2rem;
   line-height: 2.2;
@@ -470,7 +473,7 @@ html, body {
 }
 
 #endingMessage .final-line {
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.4rem;
   color: rgba(200, 200, 220, 0.9);
   margin-top: 25px;
@@ -505,7 +508,7 @@ html, body {
 }
 
 .end-btn {
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.1rem;
   padding: 12px 35px;
   border: 1px solid rgba(200, 200, 220, 0.2);
